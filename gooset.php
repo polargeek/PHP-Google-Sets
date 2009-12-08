@@ -1,4 +1,5 @@
 <?php 
+// Hay que tener la directiva allow_url_include activada
 include_once("http://simplehtmldom.svn.sourceforge.net/viewvc/simplehtmldom/tags/v_1_11/simple_html_dom.php?revision=178");
 class gooset{
 	private $query; //array con palabras clave para buscar
@@ -30,7 +31,6 @@ class gooset{
 		}
 		
 	}
-	
 	
 	function get_set(){
 		return $this->set;
